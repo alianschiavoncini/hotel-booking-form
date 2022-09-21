@@ -1,0 +1,25 @@
+.section-wrapper {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fbfbfb;
+    border: #ccc;
+}
+.form-table {
+    width: initial;
+}
+::placeholder {
+    color: #aaaaaa;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #aaaaaa;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #aaaaaa;
+}
+.hotel-booking-form-new-treatment-option,
+.hotel-booking-form-new-room-option {
+    margin-top: 10px;
+}
+
+
