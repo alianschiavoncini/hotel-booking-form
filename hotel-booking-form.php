@@ -10,7 +10,6 @@
  * Author URI: https://www.alian.it
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Update URI: https://wordpress.org/plugins/hotel-booking-form
  * Text Domain: hotel-booking-form
  */
 
@@ -42,7 +41,7 @@ function hotel_booking_form_enqueue_files() {
 	//Get the calendar UI theme from booking form settings
 	$jquery_ui_theme = get_option('hotel-booking-form-calendar');
 	if (!$jquery_ui_theme) { $jquery_ui_theme = 'base'; }
-	$jquery_ui_theme_url = '//code.jquery.com/ui/1.12.1/themes/'.$jquery_ui_theme.'/jquery-ui.min.css';
+	$jquery_ui_theme_url = plugin_dir_url( __FILE__ ) . 'vendors/jquery-ui-themes/themes/'.$jquery_ui_theme.'/jquery-ui.min.css';
 	wp_enqueue_style('jquery-ui-datepicker', $jquery_ui_theme_url);
 
 }
@@ -56,7 +55,7 @@ function hotel_booking_form_add_plugin_page_settings_link( $links ) {
 		$links,
 		'<a href="' .
 		admin_url('options-general.php?page=hotel-booking-form') .
-		'">' . __('Settings') . '</a>'
+		'">' . __('Settings', 'hotel-booking-form') . '</a>'
 	);
 	return $links;
 }
