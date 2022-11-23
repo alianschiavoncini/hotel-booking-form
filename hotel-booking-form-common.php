@@ -72,8 +72,8 @@ function hotel_booking_form_shortcode_output() {
 	if (file_exists($template_file)) { // Template file exists.
 		ob_start();
 		include($template_file);
-		$file = ob_get_clean();
-		echo $file;
+		$content = ob_get_clean();
+		return $content;
 	}
 }
 add_shortcode('hotel-booking-form', 'hotel_booking_form_shortcode_output');
