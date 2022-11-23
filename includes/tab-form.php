@@ -17,12 +17,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -34,8 +34,8 @@
 						$field_value = get_option($field_name);
                         ?>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo __('Mandatory', 'hotel-booking-form'); ?></label>
@@ -50,12 +50,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -67,8 +67,8 @@
 						$field_value = get_option($field_name);
 						?>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
 								echo 'checked="checked"';
 							} ?>><?php echo __('Mandatory', 'hotel-booking-form'); ?></label>
@@ -83,12 +83,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -100,8 +100,8 @@
 						$field_value = get_option($field_name);
 						?>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
 								echo 'checked="checked"';
 							} ?>><?php echo __('Mandatory', 'hotel-booking-form'); ?></label>
@@ -116,12 +116,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -133,8 +133,8 @@
 						$field_value = get_option($field_name);
 						?>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
 								echo 'checked="checked"';
 							} ?>><?php echo __('Mandatory', 'hotel-booking-form'); ?></label>
@@ -157,12 +157,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -177,12 +177,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -200,9 +200,9 @@
 			);
 			?>
             <tr>
-                <th scope="row"><label for="<?php echo $field['name']; ?>"><?php echo $field['label']; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field['name']); ?>"><?php echo $field['label']; ?></label></th>
                 <td>
-                    <select name="<?php echo $field['name']; ?>" id="<?php echo $field['name']; ?>">
+                    <select name="<?php echo esc_attr($field['name']); ?>" id="<?php echo esc_attr($field['name']); ?>">
 						<?php
 						$options = array('dd-mm-yy', 'mm-dd-yy', 'yy-mm-dd', 'yy-dd-mm', 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd', 'yy/dd/mm');
 						foreach ($options as $value) {
@@ -211,7 +211,7 @@
 								$selected = ' selected="selected"';
 							}
 							?>
-                            <option value="<?php echo $value; ?>"<?php echo $selected; ?>><?php echo $value; ?></option>
+                            <option value="<?php echo esc_attr($value); ?>"<?php echo $selected; ?>><?php echo $value; ?></option>
 							<?php
 						}
 						?>
@@ -230,9 +230,9 @@
 			);
 			?>
             <tr>
-                <th scope="row"><label for="<?php echo $field['name']; ?>"><?php echo $field['label']; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field['name']); ?>"><?php echo $field['label']; ?></label></th>
                 <td>
-                    <select name="<?php echo $field['name']; ?>" id="<?php echo $field['name']; ?>">
+                    <select name="<?php echo esc_attr($field['name']); ?>" id="<?php echo esc_attr($field['name']); ?>">
 						<?php
 						$options = array('base', 'black-tie', 'blitzer', 'cupertino', 'dark-hive', 'dot-luv', 'eggplant', 'excite-bike', 'flick', 'hot-sneaks', 'humanity', 'le-frog', 'mint-choc', 'overcast', 'pepper-grinder', 'redmond', 'smoothness', 'south-street', 'start', 'sunny', 'swanky-purse', 'trontastic', 'ui-darkness', 'ui-lightness', 'vader');
 						foreach ($options as $value) {
@@ -241,7 +241,7 @@
 								$selected = ' selected="selected"';
 							}
 							?>
-                            <option value="<?php echo $value; ?>"<?php echo $selected; ?>><?php echo $value; ?></option>
+                            <option value="<?php echo esc_attr($value); ?>"<?php echo $selected; ?>><?php echo $value; ?></option>
 							<?php
 						}
 						?>
@@ -264,12 +264,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -295,14 +295,14 @@
                     if ($field['value']) {
                         foreach ($field['value'] as $field_value) {
                             echo '<div class="hotel-booking-form-new-treatment-option">';
-                            echo $i . ') <input type="text" name="' . $field['name'] . '" class="regular-text" value="' . esc_attr($field_value) .'">';
+                            echo $i . ') <input type="text" name="' . esc_attr($field['name']) . '" class="regular-text" value="' . esc_attr($field_value) .'">';
                             echo '<button class="button hotel-booking-form-treatment_options_delete_field">' . __('Delete', 'hotel-booking-form') . '</button>';
                             echo '</div>';
                             $i++;
                         }
                     }else{
                         ?>
-                        <div class="hotel-booking-form-new-treatment-option"><?php echo $i; ?>) <input type="text" name="<?php echo $field['name']; ?>" class="regular-text" value=""></div>
+                        <div class="hotel-booking-form-new-treatment-option"><?php echo esc_attr($i); ?>) <input type="text" name="<?php echo esc_attr($field['name']); ?>" class="regular-text" value=""></div>
                         <?php
                     }
                     ?>
@@ -324,12 +324,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -355,14 +355,14 @@
                     if ($field['value']) {
                         foreach ($field['value'] as $field_value) {
                             echo '<div class="hotel-booking-form-new-room-option">';
-                            echo $i . ') <input type="text" name="' . $field['name'] . '" class="regular-text" value="' . esc_attr($field_value) .'">';
+                            echo $i . ') <input type="text" name="' . esc_attr($field['name']) . '" class="regular-text" value="' . esc_attr($field_value) .'">';
                             echo '<button class="button hotel-booking-form-room_options_delete_field">' . __('Delete', 'hotel-booking-form') . '</button>';
                             echo '</div>';
                             $i++;
                         }
                     }else{
                         ?>
-                        <div class="hotel-booking-form-new-room-option"><?php echo $i; ?>) <input type="text" name="<?php echo $field['name']; ?>" class="regular-text" value=""></div>
+                        <div class="hotel-booking-form-new-room-option"><?php echo esc_attr($i); ?>) <input type="text" name="<?php echo esc_attr($field['name']); ?>" class="regular-text" value=""></div>
                         <?php
                     }
                     ?>
@@ -384,12 +384,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -407,9 +407,9 @@
             );
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field['name']; ?>"><?php echo $field['label']; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field['name']); ?>"><?php echo $field['label']; ?></label></th>
                 <td>
-                    <select name="<?php echo $field['name']; ?>" id="<?php echo $field['name']; ?>">
+                    <select name="<?php echo esc_attr($field['name']); ?>" id="<?php echo esc_attr($field['name']); ?>">
                         <?php
                         for ($i = 1; $i <= 10; $i++) {
                             $selected = '';
@@ -417,7 +417,7 @@
                                 $selected = ' selected="selected"';
                             }
                             ?>
-                            <option value="<?php echo $i; ?>"<?php echo $selected; ?>><?php echo $i; ?></option>
+                            <option value="<?php echo esc_attr($i); ?>"<?php echo $selected; ?>><?php echo esc_attr($i); ?></option>
                             <?php
                         }
                         ?>
@@ -440,12 +440,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -463,9 +463,9 @@
             );
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field['name']; ?>"><?php echo $field['label']; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field['name']); ?>"><?php echo $field['label']; ?></label></th>
                 <td>
-                    <select name="<?php echo $field['name']; ?>" id="<?php echo $field['name']; ?>">
+                    <select name="<?php echo esc_attr($field['name']); ?>" id="<?php echo esc_attr($field['name']); ?>">
                         <?php
                         for ($i = 1; $i <= 10; $i++) {
                             $selected = '';
@@ -473,7 +473,7 @@
                                 $selected = ' selected="selected"';
                             }
                             ?>
-                            <option value="<?php echo $i; ?>"<?php echo $selected; ?>><?php echo $i; ?></option>
+                            <option value="<?php echo esc_attr($i); ?>"<?php echo $selected; ?>><?php echo esc_attr($i); ?></option>
                             <?php
                         }
                         ?>
@@ -496,12 +496,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -519,9 +519,9 @@
             );
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field['name']; ?>"><?php echo $field['label']; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field['name']); ?>"><?php echo $field['label']; ?></label></th>
                 <td>
-                    <select name="<?php echo $field['name']; ?>" id="<?php echo $field['name']; ?>">
+                    <select name="<?php echo esc_attr($field['name']); ?>" id="<?php echo esc_attr($field['name']); ?>">
                         <?php
                         for ($i = 1; $i <= 10; $i++) {
                             $selected = '';
@@ -529,7 +529,7 @@
                                 $selected = ' selected="selected"';
                             }
                             ?>
-                            <option value="<?php echo $i; ?>"<?php echo $selected; ?>><?php echo $i; ?></option>
+                            <option value="<?php echo esc_attr($i); ?>"<?php echo $selected; ?>><?php echo esc_attr($i); ?></option>
                             <?php
                         }
                         ?>
@@ -552,12 +552,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -575,9 +575,9 @@
             );
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field['name']; ?>"><?php echo $field['label']; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field['name']); ?>"><?php echo $field['label']; ?></label></th>
                 <td>
-                    <select name="<?php echo $field['name']; ?>" id="<?php echo $field['name']; ?>">
+                    <select name="<?php echo esc_attr($field['name']); ?>" id="<?php echo esc_attr($field['name']); ?>">
                         <?php
                         for ($i = 0; $i <= 17; $i++) {
                             $selected = '';
@@ -585,7 +585,7 @@
                                 $selected = ' selected="selected"';
                             }
                             ?>
-                            <option value="<?php echo $i; ?>"<?php echo $selected; ?>><?php echo $i; ?></option>
+                            <option value="<?php echo esc_attr($i); ?>"<?php echo $selected; ?>><?php echo esc_attr($i); ?></option>
                             <?php
                         }
                         ?>
@@ -608,12 +608,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -631,8 +631,8 @@
             );
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field['name']; ?>"><?php echo $field['label']; ?></label></th>
-                <td><input type="text" id="<?php echo $field['name']; ?>" name="<?php echo $field['name']; ?>" class="regular-text" value="<?php echo $field['value']; ?>" placeholder="<?php echo $field['placeholder']; ?>"></td>
+                <th scope="row"><label for="<?php echo esc_attr($field['name']); ?>"><?php echo $field['label']; ?></label></th>
+                <td><input type="text" id="<?php echo esc_attr($field['name']); ?>" name="<?php echo esc_attr($field['name']); ?>" class="regular-text" value="<?php echo $field['value']; ?>" placeholder="<?php echo $field['placeholder']; ?>"></td>
             </tr>
 
         </table>
@@ -650,12 +650,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -673,8 +673,8 @@
             );
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field['name']; ?>"><?php echo $field['label']; ?></label></th>
-                <td><input type="text" id="<?php echo $field['name']; ?>" name="<?php echo $field['name']; ?>" class="regular-text" value="<?php echo $field['value']; ?>" placeholder="<?php echo $field['placeholder']; ?>"></td>
+                <th scope="row"><label for="<?php echo esc_attr($field['name']); ?>"><?php echo $field['label']; ?></label></th>
+                <td><input type="text" id="<?php echo esc_attr($field['name']); ?>" name="<?php echo esc_attr($field['name']); ?>" class="regular-text" value="<?php echo $field['value']; ?>" placeholder="<?php echo $field['placeholder']; ?>"></td>
             </tr>
 
         </table>
@@ -692,12 +692,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -712,12 +712,12 @@
             $field_value = get_option($field_name);
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field_name; ?>"><?php echo $field_label; ?></label></th>
+                <th scope="row"><label for="<?php echo esc_attr($field_name); ?>"><?php echo $field_label; ?></label></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span><?php echo $field_label; ?></span></legend>
-                        <label for="<?php echo $field_name; ?>"><input id="<?php echo $field_name; ?>"
-                                                                       name="<?php echo $field_name; ?>" type="checkbox"
+                        <label for="<?php echo esc_attr($field_name); ?>"><input id="<?php echo esc_attr($field_name); ?>"
+                                                                       name="<?php echo esc_attr($field_name); ?>" type="checkbox"
                                                                        value="1" <?php if ($field_value == "1") {
                                 echo 'checked="checked"';
                             } ?>><?php echo $field_description; ?></label>
@@ -743,8 +743,8 @@
             );
             ?>
             <tr>
-                <th scope="row"><label for="<?php echo $field['name']; ?>"><?php echo $field['label']; ?></label></th>
-                <td><input type="text" id="<?php echo $field['name']; ?>" name="<?php echo $field['name']; ?>" class="regular-text" value="<?php echo $field['value']; ?>" placeholder="<?php echo $field['placeholder']; ?>"></td>
+                <th scope="row"><label for="<?php echo esc_attr($field['name']); ?>"><?php echo $field['label']; ?></label></th>
+                <td><input type="text" id="<?php echo esc_attr($field['name']); ?>" name="<?php echo esc_attr($field['name']); ?>" class="regular-text" value="<?php echo $field['value']; ?>" placeholder="<?php echo $field['placeholder']; ?>"></td>
             </tr>
 
         </table>

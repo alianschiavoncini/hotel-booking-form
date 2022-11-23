@@ -23,8 +23,8 @@
             if ($field['value'] == '') { $field['value'] = get_option('admin_email'); }
 			?>
             <tr>
-                <th scope="row"><label for="<?php echo $field['name']; ?>"><?php echo $field['label']; ?></label></th>
-                <td><input type="text" id="<?php echo $field['name']; ?>" name="<?php echo $field['name']; ?>" class="regular-text" value="<?php echo $field['value']; ?>" placeholder="<?php echo $field['placeholder']; ?>" <?php if ($field['required']) { echo 'required="required"'; }?>></td>
+                <th scope="row"><label for="<?php echo esc_attr($field['name']); ?>"><?php echo $field['label']; ?></label></th>
+                <td><input type="text" id="<?php echo esc_attr($field['name']); ?>" name="<?php echo esc_attr($field['name']); ?>" class="regular-text" value="<?php echo esc_attr($field['value']); ?>" placeholder="<?php echo esc_attr($field['placeholder']); ?>" <?php if ($field['required']) { echo 'required="required"'; }?>></td>
             </tr>
 
 			<?php
@@ -40,8 +40,8 @@
 			if ($field['value'] == '') { $field['value'] = __('Booking request for') . ' ' . get_option('blogname'); }
 			?>
             <tr>
-                <th scope="row"><label for="<?php echo $field['name']; ?>"><?php echo $field['label']; ?></label></th>
-                <td><input type="text" id="<?php echo $field['name']; ?>" name="<?php echo $field['name']; ?>" class="regular-text" value="<?php echo $field['value']; ?>" placeholder="<?php echo $field['placeholder']; ?>" <?php if ($field['required']) { echo 'required="required"'; }?>></td>
+                <th scope="row"><label for="<?php echo esc_attr($field['name']); ?>"><?php echo esc_attr($field['label']); ?></label></th>
+                <td><input type="text" id="<?php echo esc_attr($field['name']); ?>" name="<?php echo esc_attr($field['name']); ?>" class="regular-text" value="<?php echo esc_attr($field['value']); ?>" placeholder="<?php echo esc_attr($field['placeholder']); ?>" <?php if ($field['required']) { echo 'required="required"'; }?>></td>
             </tr>
 
         </table>

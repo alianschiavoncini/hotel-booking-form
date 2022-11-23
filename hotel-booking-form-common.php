@@ -86,21 +86,22 @@ function hotel_booking_form_send() {
 	if (isset($_POST['hotel-booking-form-send']) && ($_POST['hotel-booking-form-send'] == 'send')) {
 
 		$to = get_option('hotel-booking-form-to_address');
-		if (empty($to) || ($to == '')) {
-			$to = get_option('admin_email');
+		if (empty($to) || ($to == '') || !is_email($to)) {
+			$to = sanitize_email(get_option('admin_email'));
 		}
 
-		$subject = get_option('hotel-booking-form-subject');
+		$subject = wp_strip_all_tags(get_option('hotel-booking-form-subject'));
 		if (empty($subject) || ($subject == '')) {
 			$subject = __('Booking request for') . ' ' . get_option('blogname');
 		}
 
 		$message = '';
-		$exclude_fields = array('hotel-booking-form-action', 'hotel-booking-form-send', 'privacy');
+		$exclude_fields = array('hotel-bookig-form-action', 'hotel-booking-form-send', 'privacy');
 		foreach ($_POST as $k => $v) {
 			if (!in_array($k, $exclude_fields)) {
 				$k = str_replace('_', ' ', $k);
 				$k = ucfirst($k);
+				$v = sanitize_text_field($v);
 				$message .= $k . ': ' . $v . PHP_EOL;
 			}
 		}
