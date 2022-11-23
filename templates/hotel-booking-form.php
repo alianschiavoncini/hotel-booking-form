@@ -51,9 +51,11 @@ if ($notice) {
     if ($my_options[$field]) {
 		$field_set[] = $my_options[$field];
     ?>
-    <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+    <div class="<?php echo $option_group . '__column ' . $option_group . '__column-inner ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('First Name', 'hotel-booking-form'); ?> <?php if ($my_options[$field.'_mandatory']) { ?><span class="<?php echo 'mandatory-field'; ?>">*</span><?php } ?></label>
         <input type="text" name="<?php echo $field; ?>" class="<?php echo $option_group . '__input-' . $field; ?>" value="" <?php if ($my_options[$field.'_mandatory']) { echo 'required="required"'; } ?>>
+        </div>
     </div>
     <?php
     }
@@ -65,8 +67,10 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
     <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('Last Name', 'hotel-booking-form'); ?> <?php if ($my_options[$field.'_mandatory']) { ?><span class="<?php echo 'mandatory-field'; ?>">*</span><?php } ?></label>
         <input type="text" name="<?php echo $field; ?>" class="<?php echo $option_group . '__input-' . $field; ?>" value="" <?php if ($my_options[$field.'_mandatory']) { echo 'required="required"'; } ?>>
+        </div>
     </div>
     <?php
     }
@@ -78,8 +82,10 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
     <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('E-mail', 'hotel-booking-form'); ?> <?php if ($my_options[$field.'_mandatory']) { ?><span class="<?php echo 'mandatory-field'; ?>">*</span><?php } ?></label>
         <input type="text" name="<?php echo $field; ?>" class="<?php echo $option_group . '__input-' . $field; ?>" value="" <?php if ($my_options[$field.'_mandatory']) { echo 'required="required"'; } ?>>
+        </div>
     </div>
     <?php
     }
@@ -91,8 +97,10 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
     <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('Telephone', 'hotel-booking-form'); ?> <?php if ($my_options[$field.'_mandatory']) { ?><span class="<?php echo 'mandatory-field'; ?>">*</span><?php } ?></label>
         <input type="text" name="<?php echo $field; ?>" class="<?php echo $option_group . '__input-' . $field; ?>" value="" <?php if ($my_options[$field.'_mandatory']) { echo 'required="required"'; } ?>>
+        </div>
     </div>
     <?php
     }
@@ -104,8 +112,10 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
     <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('Check-in', 'hotel-booking-form'); ?></label>
         <input type="text" name="<?php echo $field; ?>" class="datepicker <?php echo $option_group . '__input-' . $field; ?>" data-date-format="<?php echo $my_options['date']; ?>" readonly>
+        </div>
     </div>
     <?php
     }
@@ -117,8 +127,10 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
     <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('Check-out', 'hotel-booking-form'); ?></label>
         <input type="text" name="<?php echo $field; ?>" class="datepicker <?php echo $option_group . '__input-' . $field; ?>" data-date-format="<?php echo $my_options['date']; ?>" readonly>
+        </div>
     </div>
     <?php
     }
@@ -130,6 +142,7 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
     <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('Treatment', 'hotel-booking-form'); ?></label>
         <select name="<?php echo $field; ?>" class="<?php echo $option_group . '__select-' . $field; ?>" size="1">
             <option value="" selected="selected">---</option>
@@ -141,6 +154,7 @@ if ($notice) {
 		}
         ?>
         </select>
+        </div>
     </div>
     <?php
     }
@@ -152,6 +166,7 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
     <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('Room', 'hotel-booking-form'); ?></label>
         <select name="<?php echo $field; ?>" class="<?php echo $option_group . '__select-' . $field; ?>" size="1">
             <option value="" selected="selected">---</option>
@@ -163,6 +178,7 @@ if ($notice) {
 		}
         ?>
         </select>
+        </div>
     </div>
     <?php
     }
@@ -174,12 +190,14 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
     <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('N. Rooms', 'hotel-booking-form'); ?></label>
         <select name="<?php echo $field; ?>" class="<?php echo $option_group . '__select-' . $field; ?>" size="1">
         <?php for ($i = 1; $i <= $my_options[$field.'_max']; $i++) { ?>
         <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
         <?php } ?>
         </select>
+        </div>
     </div>
     <?php
     }
@@ -191,12 +209,14 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
     <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('Adults', 'hotel-booking-form'); ?></label>
         <select name="<?php echo $field; ?>" class="<?php echo $option_group . '__select-' . $field; ?>" size="1">
         <?php for ($i = 1; $i <= $my_options[$field.'_max']; $i++) { ?>
         <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
         <?php } ?>
         </select>
+        </div>
     </div>
     <?php
     }
@@ -208,12 +228,14 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
     <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('Children', 'hotel-booking-form'); ?></label>
         <select name="<?php echo $field; ?>" class="<?php echo $option_group . '__select-' . $field; ?>" size="1">
         <?php for ($i = 0; $i <= $my_options[$field.'_max']; $i++) { ?>
         <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
         <?php } ?>
         </select>
+        </div>
     </div>
     <?php
     }
@@ -229,12 +251,14 @@ if ($notice) {
 	    for ($x = 1; $x <= $my_options['children_max']; $x++) {
 	?>
         <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?> <?php echo $option_group . '__column-' . $field . '-' . $x; ?>">
+            <div class="<?php echo $option_group . '__column-inner'; ?>">
             <label for="<?php echo $field . '-' . $x; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php _e('Children Age', 'hotel-booking-form'); ?> <?php echo $x; ?></label>
             <select name="<?php echo $field . '-' . $x; ?>" class="<?php echo $option_group . '__select-' . $field; ?>" size="1">
             <?php for ($i = 0; $i <= $my_options[$field.'_max']; $i++) { ?>
             <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
             <?php } ?>
             </select>
+            </div>
         </div>
     <?php
     	}
@@ -250,8 +274,10 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
         <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+            <div class="<?php echo $option_group . '__column-inner'; ?>">
             <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>"><?php echo $my_options[$field . '_label']; ?></label>
             <textarea name="<?php echo $field; ?>" class="<?php echo $option_group . '__input-' . $field; ?>"></textarea>
+            </div>
         </div>
 		<?php
 	}
@@ -263,6 +289,7 @@ if ($notice) {
 		$field_set[] = $my_options[$field];
     ?>
         <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+            <div class="<?php echo $option_group . '__column-inner'; ?>">
             <label for="<?php echo $field; ?>" class="<?php echo $option_group . '__label-' . $field; ?>">
                 <input type="checkbox" id="<?php echo $field; ?>" name="<?php echo $field; ?>" value="1">
                 <?php
@@ -284,6 +311,7 @@ if ($notice) {
 				}
                 ?>
             </label>
+            </div>
         </div>
 		<?php
 	}
@@ -318,7 +346,9 @@ if ($notice) {
         }
     ?>
     <div class="<?php echo $option_group . '__column ' . $option_group . '__column-' . $field; ?>">
+        <div class="<?php echo $option_group . '__column-inner'; ?>">
         <input type="submit" class="<?php echo $option_group . '__input-' . $field; ?>" value="<?php echo esc_attr($value); ?>" <?php if ($my_options['privacy']) { echo 'disabled'; } ?>>
+        </div>
     </div>
     <?php
 	}elseif( empty($field_set) && user_can( wp_get_current_user(), 'administrator' ) && !$notice  ) {
