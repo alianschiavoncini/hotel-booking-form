@@ -1,15 +1,25 @@
+.hotel-booking-form {
+    overflow: auto;
+}
 .hotel-booking-form__row {
-    clear: both;
+    overflow: auto;
     width: 100%;
 }
 .hotel-booking-form__column {
-    padding: 5px 10px;
     width: 50%;
     float: left;
+}
+.hotel-booking-form__column .hotel-booking-form__column-inner {
+    padding: 5px 10px;
 }
 .hotel-booking-form__column label {
     display: block;
 }
 .hotel-booking-form input[type=submit]:disabled {
     cursor: not-allowed;
+}
+.hotel-booking-form__column-message,
+.hotel-booking-form__column-privacy,
+.hotel-booking-form__column-button_label {
+    width: 100%;
 }
