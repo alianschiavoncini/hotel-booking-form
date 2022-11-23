@@ -2,9 +2,9 @@
 Contributors: alian
 Tags: hotel booking form, booking widget, booking, reservation form, reservation widget, reservation, hotel reservation, hotel booking
 Requires at least: 3.0.1
-Tested up to: 6.0.2
+Tested up to: 6.1.1
 Stable tag:	0.0.1
-Requires PHP: 5.2.4
+Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
