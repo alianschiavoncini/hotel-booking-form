@@ -18,8 +18,11 @@
 .hotel-booking-form input[type=submit]:disabled {
     cursor: not-allowed;
 }
+.hotel-booking-form__column-treatment,
+.hotel-booking-form__column-room,
 .hotel-booking-form__column-message,
 .hotel-booking-form__column-privacy,
-.hotel-booking-form__column-button_label {
+.hotel-booking-form__column-button_label,
+.hotel-booking-form__input-message {
     width: 100%;
 }
